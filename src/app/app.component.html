@@ -1,15 +1,18 @@
 <header>
     <mat-toolbar color="primary">
-        <span>Autobahn</span>
-        <span class="example-spacer"></span>
-        <button mat-raised-button routerLink="/home">
-            Home
-        </button>
-        <button mat-raised-button routerLink="/map">
-            Map
-        </button>
+        <div class="row w-100">
+            <span>Autobahn</span>
+        </div>
     </mat-toolbar>
 </header>
 <main>
-  <router-outlet></router-outlet>
+    <div class="row h-100">
+        <div class="col-md-4 my-4 mx-4">
+            <app-home></app-home>
+        </div>
+        <div class="col-md-7 my-4 mx-4">
+            <app-map></app-map>
+        </div>
+    </div>
 </main>
+
